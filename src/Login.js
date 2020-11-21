@@ -4,6 +4,8 @@ import hash from "./hash";
 import "./Login.css";
 import Home from "./Home"
 import * as $ from "jquery";
+//import AWSAppSyncClient, { AUTH_TYPE } from 'aws-appsync';
+//import aws_config from './aws-exports';
 
 class Login extends Component {
   constructor() {
@@ -15,6 +17,14 @@ class Login extends Component {
     };
     this.componentDidMount = this.componentDidMount.bind(this);
   }
+
+  /* client = new AWSAppSyncClient({
+    url: aws_config.aws_appsync_graphqlEndpoint,
+    region: aws_config.aws_appsync_region,
+    auth: {
+        type: AUTH_TYPE.API_KEY,
+        apiKey: aws_config.aws_appsync_apiKey,
+    }}) */
   
   
   componentDidMount() {
